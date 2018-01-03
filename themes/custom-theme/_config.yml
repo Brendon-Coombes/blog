@@ -29,6 +29,7 @@ show_count: false
 
 # Miscellaneous
 google_analytics: UA-111422200-1
+app_insights: 1f6da0bc-58e7-4b18-b838-c9ed3d1b5830
 favicon: /favicon.png
 twitter:
 google_plus:
