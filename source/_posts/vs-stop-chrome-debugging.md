@@ -20,7 +20,7 @@ It is a simple task to disable this feature; first go to **Tools -> Options**
 
 Then scroll down to the **Debugging -> General** option on the menu on the left hand side. Then search for thes setting labelled **"Enable JavaScript debugging for ASP.NET (Chrome and IE)"** and uncheck it.
 
-{% asset_img "enable-javascript-debugging-option" "Uncheck enable JavasScript debugging"%}
+{% asset_img "enable-javascript-debugging-option.png" "Uncheck enable JavasScript debugging"%}
 
 Now the next time you debug an ASP.NET application your default browser should launch rather than the Visual Studio version of Chrome.
 
