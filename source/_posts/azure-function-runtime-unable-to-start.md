@@ -32,7 +32,7 @@ The error we are seeing in the portal is not that the function runtime is unable
 
 Reading about this further; I discovered that the options for IP Address Restriction have been disabled in Azure Functions on the Azure Portal due to them being buggy. They will be re-enabled in the portal when the issues around them have been fixed.
 
-Because this option had been disabled, I had no way of knowing if my function app had IP Restrictions through the Azure Portal. Luckily for me, even though the option has been disabled in the portal, you can still view and edit this setting in the resource explorer as explained by David Ebbo in GitHub issue [2471](https://github.com/Azure/azure-functions-ux/issues/2471#issuecomment-387568608) in the Azure Functions UX repository
+Because this option had been disabled, I had no way of knowing if my function app had IP Restrictions through the Azure Portal. Luckily for me, even though the option has been disabled in the portal, you can still view and edit this setting in the resource explorer as explained by David Ebbo in GitHub issue [2471](https://github.com/Azure/azure-functions-ux/issues/2471#issuecomment-387568608) in the Azure Functions UX repository:
 
 > You can remove the restrictions using Resource Explorer. Instructions:
 > - Go to [https://resources.azure.com/](https://resources.azure.com/)
