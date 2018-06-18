@@ -68,14 +68,34 @@ To test your function, you simply run it as you normally would a console applica
 
 When you Azure function has started, the URL to contact it will be output in the console window.
 
-{% asset_img "azure-function-running" "Running Azure Function"%}
+{% asset_img "azure-function-running.png" "Running Azure Function"%}
 
-> TODO explain errors
+If we browse to that URL in a web browser we will be interacting with the function. If I browse to that URL now, I will get an error like this:
 
-{% asset_img "function-error-output" "Error output when name parameter is not specified"%}
+{% asset_img "function-error-output.png" "Error output when name parameter is not specified"%}
 
-> TODO explain success
+This is because we are expecting a name to be passed in to the function. We did not specify a name in the URL. If we add a querystring with the name in it like '?name=Brendon', then the function will give us the output we are expecting:
 
-{% asset_img "function-success-output" "Successful output"%}
+{% asset_img "function-success-output.png" "Successful output"%}
 
-> TODO, write a bit about JSON parsing/outputting. Maybe publishing?
+Obviously, this is a very simple example of an Azure Function. In a more realistic scenario we would be formatting the data we return in a more sturdy machine readable format such as JSON, and it would be less likely that people are accessing this endpoint directly; it is probably going to be another service consuming our data, or contacting this endpoint to trigger off a longer running job.
+
+## Publish your function to Azure
+
+To get your function in Azure you need to publish it. To do this from Visual Studio; right-click on your function project and select "Publish".
+
+{% asset_img "visual-studio-publish.png" "Visual studio publish"%}
+
+In this scenario, I do not have an existing function app, so I am going to select "Create New"
+
+{% asset_img "create-new-function-app.png" "Create a new function app in visual studio"%}
+
+You will then be asked to choose an App Name, Subscription, Resource Group, and Hosting Plan for your function in Azure.
+
+{% asset_img "create-function-app-resources.png" "Create new function app resources in visual studio"%}
+
+When you have selected your resources (or created new ones), your application will begin to publish. When it has completed you should now see the function in your Azure portal, you are able to test your new function on the right-hand side of the page of your function in the portal, or get a URL that goes directly to your function
+
+{% asset_img "function-in-azure.png" "Published function in the Azure portal"%}
+
+So there you have it, you have a running Azure Function.
