@@ -1,10 +1,10 @@
 ---
 title: Timeout more than the maximum 31 days in a CRM workflow
 categories:
- - CRM
+ - [Dynamics365, Tips]
 date: 2016-10-19 15:32:26
 tags:
- - CRM
+ - Dynamics365
  - Workflows
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Publish an Azure Function in the Azure Portal
 categories:
+ - [Azure, Azure Functions]
  - Development
 date: 2018-03-29 08:25:51
 tags:

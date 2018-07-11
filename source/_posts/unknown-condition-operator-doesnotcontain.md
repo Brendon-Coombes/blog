@@ -1,7 +1,8 @@
 ---
 title: Dynamics 365 Retrieve Multiple - Unknown Condition Operator:DoesNotContain
 categories:
- - Development
+ - [Development]
+ - [Dynamics365, Development]
 date: 2018-02-27 06:15:24
 tags:
  - Development

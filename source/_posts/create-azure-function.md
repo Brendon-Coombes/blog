@@ -1,7 +1,7 @@
 ---
 title: Creating Azure Functions
 categories:
- - Azure Functions
+ - [Azure, Azure Functions]
 date: 2018-03-15 01:23:45
 tags:
  - Azure
