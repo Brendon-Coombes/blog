@@ -2,6 +2,7 @@
 title: Adding a Service User to Dynamics 365
 categories:
  - [Dynamics365, Integration]
+ - [Development]
  - Integration
 date: 2018-01-29 15:55:57
 tags:

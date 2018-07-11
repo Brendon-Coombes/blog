@@ -2,7 +2,7 @@
 title: Adding Application Insights to an Existing Web Application
 categories:
  - [Application Insights]
- - [Web Development]
+ - [Development, Web Development]
 date: 2017-01-11 15:55:57
 tags:
  - Application Insights

@@ -1,9 +1,8 @@
 ---
 title: Azure Sentiment Analysis - How Negative Am I?
 categories:
- - Azure
- - Cognitive Services
- - Sentiment Analysis
+ - [Azure, Cognitive Services, Sentiment Analysis]
+ - [Azure, Cognitive Services, Text Analytics]
 date: 2018-07-11 16:22:01
 tags:
  - Azure
@@ -20,7 +19,8 @@ In order to have some fact behind whether or not I achieve my goal, I going to a
 In this post, I discuss what I am intending to measure and what I have set up with Azure to help me measure it.
 <!-- more --> 
 
-## What is Azure Cognitive
+## What is Azure Cognitive Services - Text Analysis
+
 
 
 Enter - Azure Cognitive Services - Text Analysis
