@@ -134,6 +134,8 @@ And then you can save to create your new Text Analytics resource.
 
 You now have a Text Analytics API that you are able to call. In order to use it you need to get your Keys, and find your API endpoint.
 
+You can find these under the Overview section, and the Keys sections on your resource.
+
 Social Media, I am not very vocal on social media - so will make an effort to post more in general especially about how I am feeling about issues
 Emails - talk about 5000 character limit - https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages
 Manual task at this point, will look into automating it on send on emails
