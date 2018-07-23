@@ -1,13 +1,14 @@
 ---
-title: Azure Sentiment Analysis - How Negative Am I?
+title: Azure Sentiment Analytics - How Negative Am I?
 categories:
- - [Azure, Cognitive Services, Sentiment Analysis]
+ - [Azure, Cognitive Services, Sentiment Analytics]
  - [Azure, Cognitive Services, Text Analytics]
 date: 2018-07-11 16:22:01
 tags:
  - Azure
+ - Azure Functions
  - Azure Cognitive Services
- - Azure Sentiment Analysis
+ - Azure Sentiment Analytics
  - Personal Growth
 ---
 Recently I was given the feedback that I am quite negative in the office. I was not surprised by this feedback as I have noticed it in myself too, and I want to do something about it.
@@ -136,9 +137,39 @@ You now have a Text Analytics API that you are able to call. In order to use it 
 
 You can find these under the Overview section, and the Keys sections on your resource.
 
-Social Media, I am not very vocal on social media - so will make an effort to post more in general especially about how I am feeling about issues
-Emails - talk about 5000 character limit - https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview#supported-languages
-Manual task at this point, will look into automating it on send on emails
+You can contact your Text Analytics endpoint with a basic HTTP Client like the following:
 
-Things I could have also looked at:
-- Speech to text - 5 hours free per month.
+```csharp
+  //TODO - put c# here.
+```
+
+## Sending my data to Text Analytics
+
+I am not normally very vocal on social media, so I am going to make an effor to post more in general, especially when I feel strongly about issues or topics. I also send a lot of emails, I have not figured out how I will get my emails into the sentiment detection automatically yet. There are Office365 API's available but it looks like that you need to add an application to your AzureAD in order to use them, which the company I work for will likely not allow me to do.
+
+At this stage I will likely use [Postman](https://www.getpostman.com/) to manually put my emails through sentiment analytics. If I figure out an automated way to achieve this; I will write a follow up post with my method.
+
+There is a limit to how much text the Text Analytics service can process at once, that limit is 5000 characters. I will just skip any social media post or email that is larger than that limit as splitting it up may skew the sentiment.
+
+I need to set a baseline for how negative I was in the past year in order to figure out if there has been any noticable improvement when I have tried to be positive for the next year. To do this; I decided that I would pull the last years posts from Twitter, Facebook, and Reddit and store them in an Azure Table. I will then automate pulling in future posts on these mediums and save them to the same table. After a year is up; I will analyse the data and confirm if I was able to be more positive or not.
+
+The data I am storing from each medium is the following
+- Medium (Facebook, Twitter, Reddit [I may add email at a later stage])
+- Date & Time (The date and time that I made the content)
+- RawContent (The content that I posted)
+- SentimentRating (The sentiment rating generated from Azure)
+- SentimentJSON (The JSON output from the sentiment result)
+
+The code I am using is a series of Azure Functions to pull the data from the various sources and save them to the Azure table. In order to run this code in Azure you will need a Function App, and a storage account to save it to. You can view the code on my [GitHub](https://github.com/brendon-coombes/). This is not structured particularly well, it was just thrown together for the purpose of retrieving the data.
+
+## The Baseline
+
+I have used the code above to set a baseline for how negative I was over the past 12 months and found the following results:
+
+- I used the Twitter API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
+- I used the Facebook API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
+- I used the Reddit API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
+
+This shows that I am more negative on twitter etc, don't know how bad other people are compared to this? Does x represent a negative person?
+
+I have not written any code to pull my emails back yet, but will add it in here if I do that in the future.
