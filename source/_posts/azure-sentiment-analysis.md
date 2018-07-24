@@ -137,10 +137,64 @@ You now have a Text Analytics API that you are able to call. In order to use it 
 
 You can find these under the Overview section, and the Keys sections on your resource.
 
-You can contact your Text Analytics endpoint with a basic HTTP Client like the following:
+You can contact your Text Analytics endpoint with a basic Http Client like the following:
 
 ```csharp
-  //TODO - put c# here.
+  HttpClient client = new HttpClient();
+  client.BaseAddress = new Uri("https://YOURLOCATIONHERE.api.cognitive.microsoft.com/text/analytics/v2.0/");
+
+  client.DefaultRequestHeaders.Add("Ocp-Apim-Subscription-Key", "YOUR KEY HERE");
+
+  var result = await client.PostAsJsonAsync("sentiment",
+      new SentimentRequest
+      {
+          Documents = new List<DocumentRequest>
+          {
+              new DocumentRequest
+              {
+                  Id = "1",
+                  Language = "en",
+                  Text = "The Philadelphia Flyers prospects will shine this year"
+              }
+          }
+      });
+
+  var sentimentResult = JObject.Parse(await result.Content.ReadAsStringAsync()).ToObject<SentimentResult>();
+```
+The code above assumes some basic classes in place to strongly type the data when sending and receiving like the following:
+
+```csharp
+
+public class DocumentRequest
+{
+    [JsonProperty("language")]
+    public string Language { get; set; }
+    [JsonProperty("id")]
+    public string Id { get; set; }
+    [JsonProperty("text")]
+    public string Text { get; set; }
+}
+
+public class DocumentResult
+{
+    [JsonProperty("id")]
+    public string Id { get; set; }
+    [JsonProperty("score")]
+    public double Score { get; set; }
+}
+
+public class SentimentRequest
+{
+    [JsonProperty("documents")]
+    public IList<DocumentRequest> Documents { get; set; }
+}
+
+public class SentimentResult
+{
+    [JsonProperty("documents")]
+    public IList<DocumentResult> Documents { get; set; }
+}
+
 ```
 
 ## Sending my data to Text Analytics
@@ -153,14 +207,14 @@ There is a limit to how much text the Text Analytics service can process at once
 
 I need to set a baseline for how negative I was in the past year in order to figure out if there has been any noticable improvement when I have tried to be positive for the next year. To do this; I decided that I would pull the last years posts from Twitter, Facebook, and Reddit and store them in an Azure Table. I will then automate pulling in future posts on these mediums and save them to the same table. After a year is up; I will analyse the data and confirm if I was able to be more positive or not.
 
-The data I am storing from each medium is the following
+The data I am storing from each medium is the following:
 - Medium (Facebook, Twitter, Reddit [I may add email at a later stage])
 - Date & Time (The date and time that I made the content)
 - RawContent (The content that I posted)
 - SentimentRating (The sentiment rating generated from Azure)
 - SentimentJSON (The JSON output from the sentiment result)
 
-The code I am using is a series of Azure Functions to pull the data from the various sources and save them to the Azure table. In order to run this code in Azure you will need a Function App, and a storage account to save it to. You can view the code on my [GitHub](https://github.com/brendon-coombes/). This is not structured particularly well, it was just thrown together for the purpose of retrieving the data.
+The code I am using is a series of Azure Functions to pull the data from the various sources and save them to the Azure table. In order to run this code in Azure you will need a Function App, and a storage account to save it to. You can view the code on my [GitHub](https://github.com/Brendon-Coombes/SentimentAnalytics). This is not structured particularly well, it was just thrown together for the purpose of retrieving the data.
 
 ## The Baseline
 
