@@ -216,6 +216,8 @@ The data I am storing from each medium is the following:
 
 The code I am using is a series of Azure Functions to pull the data from the various sources and save them to the Azure table. In order to run this code in Azure you will need a Function App, and a storage account to save it to. You can view the code on my [GitHub](https://github.com/Brendon-Coombes/SentimentAnalytics). This is not structured particularly well, it was just thrown together for the purpose of retrieving the data.
 
+Facebook's API was a little too restrictive with the content that the Graph API would output, so instead of having an automated function to pull in data from the API, I have a monthly reminder to upload my data manually. You can see how to get your data from Facebook on the [Facebook help pages](https://www.facebook.com/help/212802592074644/?ref=u2u). I downloaded my data in JSON format, and sent the comments/comments.json, and posts/your_posts.json files to my endpoint with a specified date range.
+
 ## The Baseline
 
 I have used the code above to set a baseline for how negative I was over the past 12 months and found the following results:
