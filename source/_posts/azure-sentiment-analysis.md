@@ -20,7 +20,7 @@ In order to have some fact behind whether or not I achieve my goal, I going to a
 In this post, I discuss what I am intending to measure and what I have set up with Azure to help me measure it.
 <!-- more --> 
 
-## What is Azure Cognitive Services - Text Analytics
+## What is Azure Cognitive Services - Text Analytics?
 
 Azure Cognitive Services - Text Analytics will take in text, analyse the words in the text and give a sentiment rating on that text. The sentiment rating is just a scale from 0 (negative) to 100 (positive). If sentiment can't be detected on the text, or it is not very confident in the sentiment, the rating will be close to the middle (~50).
 
@@ -220,12 +220,11 @@ Facebook's API was a little too restrictive with the content that the Graph API 
 
 ## The Baseline
 
-I have used the code above to set a baseline for how negative I was over the past 12 months and found the following results:
+I have used the code above to set a baseline for how negative I was over the past 12 months and found that I had not posted enough to set a decent baseline, so I used the past 24 months rather than the past 12 months instead. From that base line I found the following results grouped by medium:
 
 - I used the Twitter API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
 - I used the Facebook API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
 - I used the Reddit API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
 
 This shows that I am more negative on twitter etc, don't know how bad other people are compared to this? Does x represent a negative person?
-
-I have not written any code to pull my emails back yet, but will add it in here if I do that in the future.
+TODO: I have made a web front end to display this data here
