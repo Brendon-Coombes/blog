@@ -227,4 +227,4 @@ I have used the code above to set a baseline for how negative I was over the pas
 - I used the Reddit API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
 
 This shows that I am more negative on twitter etc, don't know how bad other people are compared to this? Does x represent a negative person?
-TODO: I have made a web front end to display this data here
+TODO: I have made a web front end to display this data here, should I do this with Blazor?
