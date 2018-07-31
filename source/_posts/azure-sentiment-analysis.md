@@ -199,7 +199,7 @@ public class SentimentResult
 
 ## Sending my data to Text Analytics
 
-I am not normally very vocal on social media, so I am going to make an effor to post more in general, especially when I feel strongly about issues or topics. I also send a lot of emails, I have not figured out how I will get my emails into the sentiment detection automatically yet. There are Office365 API's available but it looks like that you need to add an application to your AzureAD in order to use them, which the company I work for will likely not allow me to do.
+I am not normally very vocal on social media, so I am going to make an effor to post more in general, especially when I feel strongly about issues or topics. I also send a lot of emails, I have not figured out how I will get my emails into the sentiment detection yet as they will have footers and history attached. There are Office365 API's available but it looks like that you need to add an application to your AzureAD in order to use them, which the company I work for will likely not allow me to do.
 
 At this stage I will likely use [Postman](https://www.getpostman.com/) to manually put my emails through sentiment analytics. If I figure out an automated way to achieve this; I will write a follow up post with my method.
 
@@ -220,11 +220,11 @@ Facebook's API was a little too restrictive with the content that the Graph API 
 
 ## The Baseline
 
-I have used the code above to set a baseline for how negative I was over the past 12 months and found that I had not posted enough to set a decent baseline, so I used the past 24 months rather than the past 12 months instead. From that base line I found the following results grouped by medium:
+I have used the code above to set a baseline for how negative I was over the past 12 months and found that I had not posted enough to set a decent baseline, so I used my entire social media history rather than the past 12 months instead. From that base line I found the following results grouped by medium:
 
-- I used the Twitter API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
-- I used the Facebook API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
-- I used the Reddit API to pull my posts from July 2017 until July 2018 and found my average sentiment was:
+- I used the Twitter API to pull my previous posts and found my median sentiment was **0.752673924** and mean sentiment was **0.572312586**.
+- I used the Facebook API to pull my previous posts and found my median sentiment was **0.997742295** and mean sentiment was **0.867793107**.
+- I used the Reddit API to pull my my previous posts  and found my median sentiment was **1** and mean sentiment was **1**.
 
 This shows that I am more negative on twitter etc, don't know how bad other people are compared to this? Does x represent a negative person?
 TODO: I have made a web front end to display this data here, should I do this with Blazor?
