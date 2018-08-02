@@ -1,6 +1,7 @@
 ---
 title: Azure Function Error -  The function runtime is unable to start
 categories:
+ - [Azure, Azure Functions]
  - Development
 date: 2018-06-11 21:05:16
 tags:

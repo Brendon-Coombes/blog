@@ -1,7 +1,7 @@
 ---
 title: Disable JavaScript Debugging in Visual Studio
 categories:
- - Development
+ - [Development, Web Development]
 date: 2018-02-14 07:23:25
 tags:
  - Development
