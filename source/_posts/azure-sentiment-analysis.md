@@ -199,13 +199,13 @@ public class SentimentResult
 
 ## Sending my data to Text Analytics
 
-I am not normally very vocal on social media, so I am going to make an effor to post more in general, especially when I feel strongly about issues or topics. I also send a lot of emails, I have not figured out how I will get my emails into the sentiment detection yet as they will have footers and history attached. There are Office365 API's available but it looks like that you need to add an application to your AzureAD in order to use them, which the company I work for will likely not allow me to do.
+I am not normally very vocal on social media, so I am going to make an effort to post more in general, especially when I feel strongly about issues or topics. I also send a lot of emails, I have not figured out how I will get my emails into the sentiment detection yet as they will have footers and history attached. There are Office365 API's available but it looks like that you need to add an application to your AzureAD in order to use them, which the company I work for will likely not allow me to do.
 
-At this stage I will likely use [Postman](https://www.getpostman.com/) to manually put my emails through sentiment analytics. If I figure out an automated way to achieve this; I will write a follow up post with my method.
+At this stage I will likely skip my emails, but I have the option of using [Postman](https://www.getpostman.com/) to manually put my emails through sentiment analytics. If I figure out an automated way to achieve this; I will write a follow up post with my method.
 
 There is a limit to how much text the Text Analytics service can process at once, that limit is 5000 characters. I will just skip any social media post or email that is larger than that limit as splitting it up may skew the sentiment.
 
-I need to set a baseline for how negative I was in the past year in order to figure out if there has been any noticable improvement when I have tried to be positive for the next year. To do this; I decided that I would pull the last years posts from Twitter, Facebook, and Reddit and store them in an Azure Table. I will then automate pulling in future posts on these mediums and save them to the same table. After a year is up; I will analyse the data and confirm if I was able to be more positive or not.
+I need to set a baseline for how negative I was in the past in order to figure out if there has been any noticable improvement when I have tried to be positive for the next year. To do this; I decided that I would pull the last years posts from Twitter, Facebook, and Reddit and store them in an Azure Table. I will then automate pulling in future posts on these mediums and save them to the same table. After a year is up; I will analyse the data and confirm if I was able to be more positive or not.
 
 The data I am storing from each medium is the following:
 - Medium (Facebook, Twitter, Reddit [I may add email at a later stage])
@@ -222,15 +222,13 @@ Facebook's API was a little too restrictive with the content that the Graph API 
 
 I have used the code above to set a baseline for how negative I was over the past 12 months and found that I had not posted enough to set a decent baseline, so I used my entire social media history rather than the past 12 months instead. From that base line I found the following results grouped by medium:
 
-- I used the Twitter API to pull my previous posts and found my median sentiment was **0.752673924** and mean sentiment was **0.572312586**.
-- I used the Facebook API to pull my previous posts and found my median sentiment was **0.997742295** and mean sentiment was **0.867793107**.
-- I used the Reddit API to pull my my previous posts  and found my median sentiment was **0.702302575** and mean sentiment was **0.569304293**.
+- On Twitter I found my median sentiment was **0.752673924** and mean sentiment was **0.572312586**.
+- On Facebook I found my median sentiment was **0.997742295** and mean sentiment was **0.867793107**.
+- On Reddit I found my median sentiment was **0.702302575** and mean sentiment was **0.569304293**.
 
-This baseline shows that I am much more positive on Facebook than the other two mediums, looking into this further I can see that it has been skewed by me saying "Happy Birthday" to my friends on their birthdays which generally has a 0.99 sentiment. These sort of comments take up a large portion of the comments I make on Facebook so if I continue that trend, the baseline will still be accurate.
+This baseline shows that I am much more positive on Facebook than the other two mediums, looking into this further I can see that it has been skewed by me saying "Happy Birthday" to my friends on their birthdays which generally has a 0.99 sentiment. These sort of comments take up a large portion of the comments I make on Facebook so if I continue that trend, the baseline will still be accurate when I look again in a years time.
 
-Reddit and Twitter have similar numbers, but I generally post about different things on each of those mediums. I use Twitter to complain about services that I am consuming and sometimes I will tweet about technical things.
-
-On Reddit, I generally am on sport subreddits talking about my favourite teams in ice hockey (The Flyers), and in rugby (The Highlanders). I am active in game day threads in sports, where sentiment is easily detected if I am commenting about something like a bad pass, or an amazing play. 
+Reddit and Twitter have similar numbers, but I generally post about different things on each of those mediums. I use Twitter to complain about services that I am consuming and sometimes I will tweet about technical things. On Reddit, I generally am on sport subreddits talking about my favourite teams in ice hockey (The Flyers), and in rugby (The Highlanders). I am active in game day threads in sports, where sentiment is easily detected if I am commenting about something like a bad pass, or an amazing play. 
 
 All of the numbers are higher than I would have estimated to begin with, which doesn't leave me much room to grow - especially on Facebook. I am looking forward to at least attempting to improve my demeanor and be a more positive person in general.
 
