@@ -224,7 +224,14 @@ I have used the code above to set a baseline for how negative I was over the pas
 
 - I used the Twitter API to pull my previous posts and found my median sentiment was **0.752673924** and mean sentiment was **0.572312586**.
 - I used the Facebook API to pull my previous posts and found my median sentiment was **0.997742295** and mean sentiment was **0.867793107**.
-- I used the Reddit API to pull my my previous posts  and found my median sentiment was **1** and mean sentiment was **1**.
+- I used the Reddit API to pull my my previous posts  and found my median sentiment was **0.702302575** and mean sentiment was **0.569304293**.
 
-This shows that I am more negative on twitter etc, don't know how bad other people are compared to this? Does x represent a negative person?
-TODO: I have made a web front end to display this data here, should I do this with Blazor?
+This baseline shows that I am much more positive on Facebook than the other two mediums, looking into this further I can see that it has been skewed by me saying "Happy Birthday" to my friends on their birthdays which generally has a 0.99 sentiment. These sort of comments take up a large portion of the comments I make on Facebook so if I continue that trend, the baseline will still be accurate.
+
+Reddit and Twitter have similar numbers, but I generally post about different things on each of those mediums. I use Twitter to complain about services that I am consuming and sometimes I will tweet about technical things.
+
+On Reddit, I generally am on sport subreddits talking about my favourite teams in ice hockey (The Flyers), and in rugby (The Highlanders). I am active in game day threads in sports, where sentiment is easily detected if I am commenting about something like a bad pass, or an amazing play. 
+
+All of the numbers are higher than I would have estimated to begin with, which doesn't leave me much room to grow - especially on Facebook. I am looking forward to at least attempting to improve my demeanor and be a more positive person in general.
+
+I will check back in on this in 12 months time to see if I have made any progress being positive.
