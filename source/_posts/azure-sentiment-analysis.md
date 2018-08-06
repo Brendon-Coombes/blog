@@ -205,7 +205,7 @@ At this stage I will likely skip my emails, but I have the option of using [Post
 
 There is a limit to how much text the Text Analytics service can process at once, that limit is 5000 characters. I will just skip any social media post or email that is larger than that limit as splitting it up may skew the sentiment.
 
-I need to set a baseline for how negative I was in the past in order to figure out if there has been any noticable improvement when I have tried to be positive for the next year. To do this; I decided that I would pull the last years posts from Twitter, Facebook, and Reddit and store them in an Azure Table. I will then automate pulling in future posts on these mediums and save them to the same table. After a year is up; I will analyse the data and confirm if I was able to be more positive or not.
+I need to set a baseline for how negative I was in the past in order to figure out if there has been any noticable improvement when I have tried to be positive for the next year. To do this; I decided that I would pull my previous posts from Twitter, Facebook, and Reddit and store them in an Azure Table. I will then automate pulling in future posts on these mediums and save them to the same table. After a year is up; I will analyse the data and confirm if I was able to be more positive or not.
 
 The data I am storing from each medium is the following:
 - Medium (Facebook, Twitter, Reddit [I may add email at a later stage])
