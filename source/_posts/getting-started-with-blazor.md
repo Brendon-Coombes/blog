@@ -15,9 +15,11 @@ In this post I get started with Blazor and take you through the steps I took to 
 
 ## What is Blazor
 
-Blazor is .NET code run on the client side. It does this using the WebAssembly standard. At the time of writing this post; it is still an experimental project and has not been given any indication of commitment from Microsoft in terms of being a long term supported product.
+Blazor is .NET code run on the client side. It does this using the WebAssembly standard. At the time of writing this post; Blazor is still an experimental project and has not been given any indication of commitment from Microsoft in terms of being a long term supported product.
 
-`TODO: More info on BLAZOR / WebAssembly and how it works and what it means for the future.`
+For more information on WebAssembly and how it works and what it does; check out [webassembly.org](https://webassembly.org/).
+
+To read about Blazor and the features that it offers check out [blazor.net](https://blazor.net/).
 
 Because it is so rapidly developed, it is likely that by the time you have read this post, some of what I have written will be out of date. I know that makes this post less than ideal for getting a gauge of how to use it, but I really wanted to share my experience on using Blazor for the first time.
 
