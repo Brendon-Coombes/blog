@@ -35,6 +35,7 @@ When you have these components installed; Blazor projects will appear as templat
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {% asset_img "create-blazor-project.png" "Create Blazor Application Template Options in Visual Studio"%}
 =======
 `TODO: Add image`
@@ -42,6 +43,9 @@ When you have these components installed; Blazor projects will appear as templat
 =======
 {% asset_img "create-blazor-project.png" "Create Blazor Application Template Options in Visual Studio"%}
 >>>>>>> Add image
+=======
+{% asset_img "create-blazor-project.png" "Create Blazor Application Template Options in Visual Studio"%}
+>>>>>>> b77dba24a85c21bebe748e1341c7acfb42ecacdc
 
 This will generate a template within Visual Studio that uses Blazor for you to have a look around and see how it works. Blazor does not yet support running with the debugger attached, so if you want to run you need to run with **Ctrl + F5** not **F5**
 
