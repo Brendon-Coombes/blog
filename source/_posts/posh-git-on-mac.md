@@ -78,3 +78,24 @@ When that has finished, you also need to add the following line to your `~/.bash
 ### Install posh-git-sh
 
 To install posh-git-sh, first browse to the [github repo here](https://github.com/lyze/posh-git-sh). Find the file git-prompt.sh in the repository and copy that file somewhere local - `~/git-prompt.sh` for example
+
+Then reference that file in your `~/.bashrc` with the following line:
+
+```bash
+source ~/git-prompt.sh
+```
+
+If you don't already have your `~/.bashrc` referenced in your `~/.bash_profile` add the following line to your `~/.bash_profile`:
+
+```bash
+source ~/.bashrc
+```
+Now when you navigate to a folder that has a git repository you should see the posh-git extension to the prompt:
+
+{% asset_img "bash-posh-git.png" "Posh-git with bash"%}
+
+Also, if you are using visual studio code and use bash as your integrated terminal, you should see the same result in the integrated termninal window:
+
+{% asset_img "visual-studio-code-bash-prompt.png" "VS Code Integrated Bash"%}
+
+Give posh-git a try if you haven't used it before, I am sure you will find it useful!
