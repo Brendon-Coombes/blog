@@ -33,19 +33,7 @@ To get started with Blazor you first need to ensure you have the following compo
 
 When you have these components installed; Blazor projects will appear as templates when you create a new ASP.NET Core Web Application within Visual Studio.
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 {% asset_img "create-blazor-project.png" "Create Blazor Application Template Options in Visual Studio"%}
-=======
-`TODO: Add image`
->>>>>>> Add creating Blazor Application section
-=======
-{% asset_img "create-blazor-project.png" "Create Blazor Application Template Options in Visual Studio"%}
->>>>>>> Add image
-=======
-{% asset_img "create-blazor-project.png" "Create Blazor Application Template Options in Visual Studio"%}
->>>>>>> b77dba24a85c21bebe748e1341c7acfb42ecacdc
 
 This will generate a template within Visual Studio that uses Blazor for you to have a look around and see how it works. Blazor does not yet support running with the debugger attached, so if you want to run you need to run with **Ctrl + F5** not **F5**
 
