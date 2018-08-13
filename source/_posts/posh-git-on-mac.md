@@ -23,7 +23,7 @@ Here is a sample view of what it adds to the prompt:
 
 {% asset_img "posh-git-prompt.png" "Posh Git Prompt example"%}
 
-You can read all about Posh git and how to use it on the [Github repository here](https://github.com/dahlbyk/posh-git). Have a read through of the README to understand what each of the 8 numbers mean and colours and symbols represent.
+You can read all about Posh git and how to use it on the [Github repository here](https://github.com/dahlbyk/posh-git). Have a read through of the README to understand what each of the numbers mean and colours and symbols represent.
 
 Having this information available so quickly and easily will speed up your Git commands by quite a bit.
 
@@ -39,4 +39,42 @@ While I think it is great that you can now install PowerShell on more operating 
 
 So I decided to try to get it to work with bash, and I found that it was easier to get working than I expected.
 
-[Posh-git for Bash](https://github.com/lyze/posh-git-sh)
+It turns out that someone has ported the posh-git repo for PowerShell into Bash: [Posh-git for Bash](https://github.com/lyze/posh-git-sh).
+
+Following the instructions on the README, I had it up and going really quickly.
+
+### Install bash-completion
+
+The first step I took, was to install git bash-completion. In order to do this; I had to install Homebrew. Homebrew is a package manager for Mac.
+
+To install Homebrew, simply run the following command in a terminal
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+You will get asked to confirm, and once you do; Homebrew will be installed.
+
+Once you have Homebrew installed you can install [bash-completion](https://github.com/bobthecow/git-flow-completion/wiki/Install-Bash-git-completion).
+
+Run the following command to install bash-completion:
+
+```bash
+brew install git bash-completion
+```
+
+If you already have git installed, you just need to run:
+
+```bash
+brew install bash-completion
+```
+
+When that has finished, you also need to add the following line to your `~/.bash_profile`
+
+```bash
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+```
+
+### Install posh-git-sh
+
+To install posh-git-sh, first browse to the [github repo here](https://github.com/lyze/posh-git-sh). Find the file git-prompt.sh in the repository and copy that file somewhere local - `~/git-prompt.sh` for example
