@@ -45,6 +45,14 @@ cd BlazorApp
 dotnet run
 ```
 
+When you have either created the application through Visual Studio, or through the command line you should have a new project created that is using Blazor!
+
+If you open it up and run it, it is very similar to the other templates that Microsoft has for frameworks such as ReactJS. When you dig into the code, you will start to see where the real magic happens.
+
+In each of the pages "Index", "Counter", and "FetchData" a Blazor compmemt os compiled and executed client-side in the browser.
+
+These components can be re-used across multiple pages as well, if you check out the [help page](https://blazor.net/docs/tutorials/build-your-first-blazor-app.html#build-components), they give a solid example on how to do this.
+
 ## Deploying / Hosting a Blazor Application
 
 ## What I Created
