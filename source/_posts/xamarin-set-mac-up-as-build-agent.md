@@ -54,3 +54,20 @@ Change the setting to allow "All Users" rather than "Only these users:"
 If you are prompted, you may also need to configure the Mac firewall to allow incoming connections.
 
 ## Connect from Windows Visual Studio 2017
+
+From Visual Studio 2017, open (or create) your iOS Xamarin application. In the toolbar you should now see the "Pair to Mac" button. If you don't see it, you can find it in Tools > iOS > Pair to Mac.
+
+{% asset_img "pair-to-mac-button.png" "Pair to Mac button in Visual Studio"%}
+
+When you click the button, if you have set your Mac up correctly; you should see it listed as a Mac available to connect to:
+
+{% asset_img "pair-to-mac-window.png" "Pair to Mac window in Visual Studio"%}
+
+Click the "Connect..." button at the bottom left.
+
+At the prompt, enter your username and password and the dialog will connect to your Mac via SSH.
+
+During the connecting phase it will check that the correct components are installed before becoming availbale to use, this can take a couple of minutes; but it should only have to do this once.
+
+When you have connected successfully the "Pair to Mac" button will now have a new icon with a green screen indicating that you are connected to a Mac.
+
