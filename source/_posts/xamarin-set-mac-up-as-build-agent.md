@@ -65,9 +65,17 @@ When you click the button, if you have set your Mac up correctly; you should see
 
 Click the "Connect..." button at the bottom left.
 
-At the prompt, enter your username and password and the dialog will connect to your Mac via SSH.
+At the prompt, enter your username and password and the dialog will connect to your Mac via SSH. If your connection is successful; Visual Studio will remember this connection and you will not have to enter these details again.
 
 During the connecting phase it will check that the correct components are installed before becoming availbale to use, this can take a couple of minutes; but it should only have to do this once.
 
-When you have connected successfully the "Pair to Mac" button will now have a new icon with a green screen indicating that you are connected to a Mac.
+When you have connected successfully the "Pair to Mac" button will now have a new icon with a green screen indicating that you are connected to your Mac.
+
+You can now launch your iOS application in Visual Studio on Windows and it will use the Mac you have set up to compile your application, then run within the simulator on your Windows machine!
+
+{% asset_img "ios-emulator-on-windows.png" "iOS emulator running on Windows"%}
+
+You can now do all of your coding from Visual Studio in Windows without needing to run from your Mac directly!
+
+Happy coding!
 
