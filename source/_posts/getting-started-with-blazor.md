@@ -56,3 +56,5 @@ These components can be re-used across multiple pages as well, if you check out 
 ## Deploying / Hosting a Blazor Application
 
 ## What I Created
+
+`Add small leaderboard app?
