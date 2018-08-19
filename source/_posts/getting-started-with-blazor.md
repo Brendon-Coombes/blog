@@ -57,4 +57,4 @@ These components can be re-used across multiple pages as well, if you check out 
 
 ## What I Created
 
-`Add small leaderboard app?
+`Add small leaderboard app for Crash Bandicoot?
