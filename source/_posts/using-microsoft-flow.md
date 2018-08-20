@@ -7,7 +7,7 @@ tags:
  - Microsoft Flow
 ---
 
-Recently I found myself needing to use an excel file as a source of data for a website, and wanted to try out using Microsoft Flow to get my data rather than manually checking the file for changes and pulling the data myself.
+Recently the office has been competing for the top relic time in levels on Crash Bandicoot N-Sane trilogy. Due to many reasons, we ended up with an Excel Spreadsheet to store and compare our times with each other. I found myself wanting to know when the data in that spreadsheet had changed. I have wanted to try out using Microsoft Flow for quite a while, and decided that this was the perfect opportunity to get my data rather than manually checking the file for changes.
 
 <!-- more --> 
 
