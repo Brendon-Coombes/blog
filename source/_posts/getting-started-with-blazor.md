@@ -2,7 +2,7 @@
 title: Getting Started With Blazor
 categories:
  - [Development, Web Development]
-date: 2018-08-03 15:59:52
+date: 2018-08-22 15:59:52
 tags:
  - Blazor
  - Web Development
@@ -55,6 +55,18 @@ These components can be re-used across multiple pages as well, if you check out 
 
 ## Deploying / Hosting a Blazor Application
 
+`TODO - explain how to deploy and host a Blazor application in Azure.
+
 ## What I Created
 
-`Add small leaderboard app for Crash Bandicoot?
+As you may have read in a [previous post](https://coombes.nz/blog/using-microsoft-flow/), our office is quite competitive with Crash Bandicoot, and we currently have a spreadsheet file that we all maintain our own times on and can use to view who the current winner is. In that post I describe how I set up Microsoft Flow to get a notification each time that the spreadsheet file is modified.
+
+I have modifed the Flow to add some additional features. It will now send a link to the spreadsheet file each time it is updated to an Azure Function I have created. That Function pulls the excel file from SharePoint and transforms it to a JSON format, and saves it to a MongoDB document database.
+
+The Blazor application I have created reads the data from the MongoDB data store and displays it on a web page. I ***borrowed*** the styling from the official [Crash Bandicoot Leaderboards web page](https://www.crashbandicoot.com/leaderboards). All the application does is show who from the office is currently winning at each level on each of the three games. It is a very simple site, but having a data set that you are pasionate about really helps you focus on completing your projects.
+
+I could tell at this point that my work mates were losing interest in the N-Sane trilogy, so I am hoping when I show them what I have created they will be inspired to pick their game back up!
+
+`TODO - Add lessons learnt`
+`TODO - Point out key features`
+`TODO - Add github link`
