@@ -3,7 +3,7 @@ title: Application Authentication with Microsoft Graph
 categories:
  - [Microsoft Graph]
  - [Development]
-date: 2018-08-23 14:31:43
+date: 2018-08-27 14:31:43
 tags:
  - Development
  - Microsoft Graph
@@ -58,6 +58,8 @@ After this step, you will be directed to a page that contains your **Application
 You will also need to add a **Native Application** platform to the Platforms section. You can create the Native Application, leave the defaults and save. 
 
 The final step for you on this page, is to **allow implicit flow**. To do this click the **Edit Application Manifest** button at the bottom of the page, this will take you to a page to edit the config. Update the **oauth2AllowImplicitFlow** and **oauth2AllowIdTokenImplicitFlow** values to true.
+
+{% asset_img "edit-application-manifest.png" "Edit Application Manifest"%}
 
 To do this you need to click the button at the bottom of the page to edit your application manifest
 
