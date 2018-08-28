@@ -13,7 +13,7 @@ tags:
 - Certificate
 ---
 
-Today; I discovered a bug/feature of the Azure KeyVault certificate store.
+Today I discovered a feature of the Azure KeyVault certificate store.
 
 We have a bunch of Azure Function Apps that have a certificate attached to them in order to connect to the shared KeyVault. I added a new Azure Function App and needed to upload the PFX so that Azure Function would have access to the KeyVault too. I thought this would be as simple as downloading the certificate through the Azure Portal and re-uploading to to my Azure Function App, but Microsoft for some reason strips the password from the certificate, and a password is required when uploading through the portal.
 
