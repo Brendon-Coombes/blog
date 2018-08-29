@@ -143,4 +143,4 @@ HttpResponseMessage response = await client.SendAsync(request);
 
 If everything was set up correctly, you should see a list of sites that have been pulled from SharePoint.
 
-I am in the process of creating a small sample application to host on GitHub, which I will link here when I have finished it.
+I have created a small sample application on [GitHub](https://github.com/Brendon-Coombes/MicrosoftGraph.Daemon) to demonstrate connecting to the MicrosoftGraph and uploading a file to SharePoint.
