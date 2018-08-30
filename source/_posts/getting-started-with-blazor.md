@@ -70,3 +70,5 @@ I could tell at this point that my work mates were losing interest in the N-Sane
 `TODO - Add lessons learnt`
 `TODO - Point out key features`
 `TODO - Add github link`
+`TODO - Add MongoDB help
+`TODO - Add Azure Function that transforms the excel file
