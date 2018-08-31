@@ -67,6 +67,10 @@ The Blazor application I have created reads the data from the MongoDB data store
 
 I could tell at this point that my work mates were losing interest in the N-Sane trilogy, so I am hoping when I show them what I have created they will be inspired to pick their game back up!
 
+The site itself, only has a single page pulling in some JSON data to display on the page. It has 3 dropdowns built out as components to filter which data is shown on the page at any given time.
+
+I have uploaded it to GitHub - check it out here.
+
 `TODO - Add lessons learnt`
 `TODO - Point out key features`
 `TODO - Add github link`
