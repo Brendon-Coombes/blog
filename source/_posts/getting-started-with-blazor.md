@@ -69,6 +69,10 @@ I could tell at this point that my work mates were losing interest in the N-Sane
 
 The site itself, only has a single page pulling in some JSON data to display on the page. It has 3 dropdowns built out as components to filter which data is shown on the page at any given time.
 
+The leaderboard component displays each of our times over the background picture that I stole from the offical crash bandicoot site.
+
+Overall this was a well worth it experience to understand how Blazor works.
+
 I have uploaded it to GitHub - check it out here.
 
 `TODO - Add lessons learnt`
