@@ -80,5 +80,4 @@ I have uploaded it to GitHub - check it out here.
 `TODO - Add lessons learnt`
 `TODO - Point out key features`
 `TODO - Add github link`
-`TODO - Add MongoDB help
 `TODO - Add Azure Function that transforms the excel file
