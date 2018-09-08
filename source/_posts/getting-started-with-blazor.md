@@ -63,7 +63,9 @@ As you may have read in a [previous post](https://coombes.nz/blog/using-microsof
 
 I have modifed the Flow to add some additional features. It will now send a link to the spreadsheet file each time it is updated to an Azure Function I have created. That Function pulls the excel file from SharePoint and transforms it to a JSON format, and saves it to a MongoDB document database.
 
-The Blazor application I have created reads the data from the MongoDB data store and displays it on a web page. I ***borrowed*** the styling from the official [Crash Bandicoot Leaderboards web page](https://www.crashbandicoot.com/leaderboards). All the application does is show who from the office is currently winning at each level on each of the three games. It is a very simple site, but having a data set that you are pasionate about really helps you focus on completing your projects.
+I haven't quite got to the point of connecting the MongoDB to this Blazor application, so at the moment it is just a hardcoded JSON file. I intend to switch that over to the MongoDB version as my next feature.
+
+The Blazor application I have created reads the data from the JSON file and displays it on a web page. I ***borrowed*** the styling from the official [Crash Bandicoot Leaderboards web page](https://www.crashbandicoot.com/leaderboards). All the application does is show who from the office is currently winning at each level on each of the three games. It is a very simple site, but having a data set that you are pasionate about really helps you focus on completing your projects.
 
 I could tell at this point that my work mates were losing interest in the N-Sane trilogy, so I am hoping when I show them what I have created they will be inspired to pick their game back up!
 
