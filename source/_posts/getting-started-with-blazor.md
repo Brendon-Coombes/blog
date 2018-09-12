@@ -76,8 +76,3 @@ The leaderboard component displays each of our times over the background picture
 Overall this was a well worth it experience to understand how Blazor works.
 
 I have uploaded it to GitHub - check it out here.
-
-`TODO - Add lessons learnt`
-`TODO - Point out key features`
-`TODO - Add github link`
-`TODO - Add Azure Function that transforms the excel file
