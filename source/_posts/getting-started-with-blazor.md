@@ -55,7 +55,11 @@ These components can be re-used across multiple pages as well, if you check out 
 
 ## Deploying / Hosting a Blazor Application
 
-`TODO - explain how to deploy and host a Blazor application in Azure.
+Deploying your Blazor application to Azure is as simple as any other Web App you have put on Azure.
+
+Right-click on the project and select publish. The interface in Visual Studio will deploy the app to Azure.
+
+{% asset_img "publish-to-azure.png" "Publish Blazor to Azure"%}
 
 ## What I Created
 
@@ -75,4 +79,14 @@ The leaderboard component displays each of our times over the background picture
 
 Overall this was a well worth it experience to understand how Blazor works.
 
-I have uploaded it to GitHub - check it out here.
+I have uploaded it to GitHub - [check it out here](https://github.com/Brendon-Coombes/BlazorApp).
+
+## My thoughts on Blazor
+
+I can definitely see the advantages of a Web Assembly approach to development. Blazor is still in its early stages and once I was digging in and attempting to use it; I found there were a few limitations. The flipside of that, is that almost every limitation I hit had been raised as an issue in the GitHub project and a lot of the time there was a suggested work around on how to do what I needed to do.
+
+It is important to remember that this is not a finished product, and using it in its current state can be frustrating when you hit a wall for an unknown reason. I don't think I will use Blazor for any other small applications that I am working on as I don't think the technology is quite there yet. I do intend to have another look at Blazor in 3 to 6 months as once they get through some teething issues, I think it will be a great framework to use to develop a website.
+
+Microsoft has still not officially backed this as a product, but I am fairly sure that they will. Even in the unlikely event that they don't; it is an open source project so anyone can pick it up if Microsoft decides to abandon support for it.
+
+All in all, I think you should give it a look now for a play around; but not invest too much time in it until it is a more stable product.
