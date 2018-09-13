@@ -2,7 +2,7 @@
 title: Getting Started With Blazor
 categories:
  - [Development, Web Development]
-date: 2018-08-22 15:59:52
+date: 2018-9-13 15:59:52
 tags:
  - Blazor
  - Web Development
